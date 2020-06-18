@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>같은지</title>
+  </head>
+  <body>
+    <h2>수식 계산</h2>
+    <hr />
+    <script>
+      const getEval = (string) => {
+        try {
+          eval(string);
+          document.write("<p>" + string + "=" + eval(string) + "</p>");
+        } catch (error) {
+          alert("잘못된 수식입니다");
+        }
+      };
+      let susik = prompt("수식입력");
+      getEval(susik);
+    </script>
+  </body>
+</html>
